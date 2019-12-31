@@ -1,0 +1,308 @@
+[
+  {
+    "name":"Button",
+    "description":"To trigger an operation.",
+    "link":"https://vue.ant.design/components/button/",
+    "component":"air-antd-button-example"
+  },
+  {
+    "name":"Icon",
+    "description":"Semantic vector graphics.",
+    "link":"https://vue.ant.design/components/icon/",
+    "component":"air-antd-icon-example"
+  },
+  {
+    "name":"Layout",
+    "description":"Handling the overall layout of a page.",
+    "link":"https://vue.ant.design/components/layout/",
+    "component":"air-antd-layout-example"
+  },
+  {
+    "name":"Avatar",
+    "description":"Avatars can be used to represent people or objects. It supports images, Icons, or letters.",
+    "link":"https://vue.ant.design/components/avatar/",
+    "component":"air-antd-avatar-example"
+  },
+  {
+    "name":"Badge",
+    "description":"Small numerical value or status descriptor for UI elements.",
+    "link":"https://vue.ant.design/components/badge/",
+    "component":"air-antd-badge-example"
+  },
+  {
+    "name":"Collapse",
+    "description":"A content area which can be collapsed and expanded.",
+    "link":"https://vue.ant.design/components/collapse/",
+    "component":"air-antd-collapse-example"
+  },
+  {
+    "name":"Carousel",
+    "description":"A carousel component. Scales with its container.",
+    "link":"https://vue.ant.design/components/carousel/",
+    "component":"air-antd-carousel-example"
+  },
+  {
+    "name":"Card",
+    "description":"Simple rectangular container.",
+    "link":"https://vue.ant.design/components/card/",
+    "component":"air-antd-card-example"
+  },
+  {
+    "name":"Calendar",
+    "description":"Container for displaying data in calendar form.",
+    "link":"https://vue.ant.design/components/calendar/",
+    "component":"air-antd-calendar-example"
+  },
+  {
+    "name":"List",
+    "description":"Simple List.",
+    "link":"https://vue.ant.design/components/list/",
+    "component":"air-antd-list-example"
+  },
+  {
+    "name":"Popover",
+    "description":"The floating card popped by clicking or hovering.",
+    "link":"https://vue.ant.design/components/popover/",
+    "component":"air-antd-popover-example"
+  },
+  {
+    "name":"Tree",
+    "description":"Tree structure",
+    "link":"https://vue.ant.design/components/tree/",
+    "component":"air-antd-tree-example"
+  },
+  {
+    "name":"Tooltip",
+    "description":"A simple text popup tip.",
+    "link":"https://vue.ant.design/components/tooltip/",
+    "component":"air-antd-tooltip-example"
+  },
+  {
+    "name":"Timeline",
+    "description":"Vertical display timeline.",
+    "link":"https://vue.ant.design/components/timeline/",
+    "component":"air-antd-timeline-example"
+  },
+  {
+    "name":"Tag",
+    "description":"Tag for categorizing or markup.",
+    "link":"https://vue.ant.design/components/tag/",
+    "component":"air-antd-tag-example"
+  },
+  {
+    "name":"Tabs",
+    "description":"Tabs make it easy to switch between different views.",
+    "link":"https://vue.ant.design/components/tabs/",
+    "component":"air-antd-tabs-example"
+  },
+  {
+    "name":"Table",
+    "description":"A table displays rows of data.",
+    "link":"https://vue.ant.design/components/table/",
+    "component":"air-antd-table-example"
+  },
+  {
+    "name":"AutoComplete",
+    "description":"Autocomplete function of input field.",
+    "link":"https://vue.ant.design/components/auto-complete/",
+    "component":"air-antd-autocomplete-example"
+  },
+  {
+    "name":"Checkbox",
+    "description":"Checkbox component.",
+    "link":"https://vue.ant.design/components/checkbox/",
+    "component":"air-antd-checkbox-example"
+  },
+  {
+    "name":"Cascader",
+    "description":"Cascade selection box.",
+    "link":"https://vue.ant.design/components/cascader/",
+    "component":"air-antd-cascader-example"
+  },
+  {
+    "name":"DatePicker",
+    "description":"To select or input a date.",
+    "link":"https://vue.ant.design/components/date-picker/",
+    "component":"air-antd-datepicker-example"
+  },
+  {
+    "name":"Form",
+    "description":"Form is used to collect, validate, and submit the user input, usually contains various form items including checkbox, radio, input, select, and etc.",
+    "link":"https://vue.ant.design/components/form/",
+    "component":"air-antd-form-example"
+  },
+  {
+    "name":"InputNumber",
+    "description":"Enter a number within certain range with the mouse or keyboard.",
+    "link":"https://vue.ant.design/components/input-number/",
+    "component":"air-antd-inputnumber-example"
+  },
+  {
+    "name":"Input",
+    "description":"A basic widget for getting the user input is a text field. Keyboard and mouse can be used for providing or changing data.",
+    "link":"https://vue.ant.design/components/input/",
+    "component":"air-antd-input-example"
+  },
+  {
+    "name":"Rate",
+    "description":"Rate component.",
+    "link":"https://vue.ant.design/components/rate/",
+    "component":"air-antd-rate-example"
+  },
+  {
+    "name":"Radio",
+    "description":"Radio.",
+    "link":"https://vue.ant.design/components/radio/",
+    "component":"air-antd-radio-example"
+  },
+  {
+    "name":"Switch",
+    "description":"Switching Selector.",
+    "link":"https://vue.ant.design/components/switch/",
+    "component":"air-antd-switch-example"
+  },
+  {
+    "name":"Slider",
+    "description":"A Slider component for displaying current value and intervals in range.",
+    "link":"https://vue.ant.design/components/slider/",
+    "component":"air-antd-slider-example"
+  },
+  {
+    "name":"Select",
+    "description":"Select component to select value from options.",
+    "link":"https://vue.ant.design/components/select/",
+    "component":"air-antd-select-example"
+  },
+  {
+    "name":"TreeSelect",
+    "description":"Tree selection control.",
+    "link":"https://vue.ant.design/components/tree-select/",
+    "component":"air-antd-treeselect-example"
+  },
+  {
+    "name":"Transfer",
+    "description":"Double column transfer choice box.",
+    "link":"https://vue.ant.design/components/transfer/",
+    "component":"air-antd-transfer-example"
+  },
+  {
+    "name":"TimePicker",
+    "description":"By clicking the input box, you can select a time from a popup panel.",
+    "link":"https://vue.ant.design/components/time-picker/",
+    "component":"air-antd-timepicker-example"
+  },
+  {
+    "name":"Upload",
+    "description":"Upload file by selecting or dragging.",
+    "link":"https://vue.ant.design/components/upload/",
+    "component":"air-antd-upload-example"
+  },
+  {
+    "name":"Alert",
+    "description":"Alert component for feedback.",
+    "link":"https://vue.ant.design/components/alert/",
+    "component":"air-antd-alert-example"
+  },
+  {
+    "name":"Drawer",
+    "description":"Panel slides from screen edge.",
+    "link":"https://vue.ant.design/components/drawer/",
+    "component":"air-antd-drawer-example"
+  },
+  {
+    "name":"Modal",
+    "description":"Modal dialogs.",
+    "link":"https://vue.ant.design/components/modal/",
+    "component":"air-antd-modal-example"
+  },
+  {
+    "name":"Message",
+    "description":"Display global messages as feedback in response to user operations.",
+    "link":"https://vue.ant.design/components/message/",
+    "component":"air-antd-message-example"
+  },
+  {
+    "name":"Notification",
+    "description":"Display a notification message globally.",
+    "link":"https://vue.ant.design/components/notification/",
+    "component":"air-antd-notification-example"
+  },
+  {
+    "name":"Progress",
+    "description":"Display the current progress of an operation flow.",
+    "link":"https://vue.ant.design/components/progress/",
+    "component":"air-antd-progress-example"
+  },
+  {
+    "name":"Popconfirm",
+    "description":"A simple and compact confirmation dialog of an action.",
+    "link":"https://vue.ant.design/components/popconfirm/",
+    "component":"air-antd-popconfirm-example"
+  },
+  {
+    "name":"Spin",
+    "description":"A spinner for displaying loading state of a page or a section.",
+    "link":"https://vue.ant.design/components/spin/",
+    "component":"air-antd-spin-example"
+  },
+  {
+    "name":"Skeleton",
+    "description":"Provide a placeholder at the place which need waiting for loading.",
+    "link":"https://vue.ant.design/components/skeleton/",
+    "component":"air-antd-skeleton-example"
+  },
+  {
+    "name":"Affix",
+    "description":"Make an element stick to viewport.",
+    "link":"https://vue.ant.design/components/affix/",
+    "component":"air-antd-affix-example"
+  },
+  {
+    "name":"Breadcrumb",
+    "description":"A breadcrumb displays the current location within a hierarchy. It allows going back to states higher up in the hierarchy.",
+    "link":"https://vue.ant.design/components/breadcrumb/",
+    "component":"air-antd-breadcrumb-example"
+  },
+  {
+    "name":"Dropdown",
+    "description":"A dropdown list.",
+    "link":"https://vue.ant.design/components/dropdown/",
+    "component":"air-antd-dropdown-example"
+  },
+  {
+    "name":"Menu",
+    "description":"Menu list of Navigation.",
+    "link":"https://vue.ant.design/components/menu/",
+    "component":"air-antd-menu-example"
+  },
+  {
+    "name":"Pagination",
+    "description":"A long list can be divided into several pages by Pagination, and only one page will be loaded at a time.",
+    "link":"https://vue.ant.design/components/pagination/",
+    "component":"air-antd-pagination-example"
+  },
+  {
+    "name":"Steps",
+    "description":"Steps is a navigation bar that guides users through the steps of a task.",
+    "link":"https://vue.ant.design/components/steps/",
+    "component":"air-antd-steps-example"
+  },
+  {
+    "name":"Anchor",
+    "description":"Hyperlinks to scroll on one page.",
+    "link":"https://vue.ant.design/components/anchor/",
+    "component":"air-antd-anchor-example"
+  },
+  {
+    "name":"BackTop",
+    "description":"BackTop makes it easy to go back to the top of the page.",
+    "link":"https://vue.ant.design/components/back-top/",
+    "component":"air-antd-backtop-example"
+  },
+  {
+    "name":"Divider",
+    "description":"A divider line separates different content.",
+    "link":"https://vue.ant.design/components/divider/",
+    "component":"air-antd-divider-example"
+  }
+]

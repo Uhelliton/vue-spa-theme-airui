@@ -1,0 +1,20 @@
+@import '@/assets/styles/mixins.scss';
+
+.tabs {
+  :global(.ant-tabs-bar) {
+    border-bottom: none;
+  }
+
+  :global(.ant-tabs-ink-bar) {
+    display: none !important;
+  }
+
+  :global(.ant-tabs-tab .btn) {
+    color: $primary;
+  }
+
+  :global(.ant-tabs-tab-active .btn) {
+    background-color: $primary;
+    color: $white !important;
+  }
+}

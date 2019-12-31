@@ -1,0 +1,19 @@
+@import '@/assets/styles/mixins.scss';
+
+.editor {
+  border: 1px solid $gray-2;
+
+  :global(.ql-toolbar.ql-snow) {
+    border: none;
+  }
+
+  :global(.ql-container.ql-snow) {
+    border: none;
+    height: 300px;
+  }
+
+  :global(.ql-editor) {
+    border: none;
+    border-top: 1px solid $gray-2;
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "name": "spa-theme-base",
+  "version": "0.0.1",
+  "description": "A Quasar Framework app",
+  "productName": "Quasar App",
+  "cordovaId": "org.cordova.quasar.app",
+  "capacitorId": "",
+  "author": "Uhelliton Andrade <uhelliton@uol.com.br>",
+  "private": true,
+  "scripts": {
+    "lint": "eslint --ext .js,.vue src",
+    "test": "echo \"No test specified\" && exit 0"
+  },
+  "dependencies": {
+    "@quasar/extras": "^1.0.0",
+    "ant-design-vue": "^1.4.10",
+    "axios": "^0.18.1",
+    "bootstrap": "^4.4.1",
+    "bootstrap-css-only": "^4.3.1",
+    "bootstrap-vue": "^2.1.0",
+    "lodash": "^4.17.15",
+    "quasar": "^1.0.0",
+    "vue-nprogress": "^0.1.5",
+    "vue-the-mask": "^0.11.1",
+    "vuelayers": "^0.11.20"
+  },
+  "devDependencies": {
+    "@quasar/app": "^1.0.0",
+    "@vue/eslint-config-standard": "^4.0.0",
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.10.0",
+    "eslint-loader": "^2.1.1",
+    "eslint-plugin-vue": "^5.0.0",
+    "node-sass": "^4.13.0",
+    "sass-loader": "^8.0.0"
+  },
+  "engines": {
+    "node": ">= 8.9.0",
+    "npm": ">= 5.6.0",
+    "yarn": ">= 1.6.0"
+  },
+  "browserslist": [
+    "last 1 version, not dead, ie >= 11"
+  ]
+}
