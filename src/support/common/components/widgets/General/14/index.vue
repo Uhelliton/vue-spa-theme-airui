@@ -47,7 +47,7 @@
 import vueCustomScrollbar from 'vue-custom-scrollbar'
 export default {
   name: 'AirGeneral14',
-  components: { vueCustomScrollbar },
+  components: { vueCustomScrollbar }
 }
 </script>
 <style lang="scss" module>

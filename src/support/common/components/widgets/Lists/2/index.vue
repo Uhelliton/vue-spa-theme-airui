@@ -78,7 +78,7 @@
 </template>
 <script>
 export default {
-  name: 'AirList2',
+  name: 'AirList2'
 }
 </script>
 <style lang="scss" module>

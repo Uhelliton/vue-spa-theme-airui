@@ -47,17 +47,17 @@
 export default {
   data: function () {
     return {
-      count: 7,
+      count: 7
     }
   },
   methods: {
-    addCount() {
+    addCount () {
       this.count++
     },
-    logout() {
+    logout () {
       this.$auth.logout()
-    },
-  },
+    }
+  }
 }
 </script>
 

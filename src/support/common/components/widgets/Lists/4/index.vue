@@ -38,7 +38,7 @@
 </template>
 <script>
 export default {
-  name: 'AirList3',
+  name: 'AirList3'
 }
 </script>
 <style lang="scss" module>

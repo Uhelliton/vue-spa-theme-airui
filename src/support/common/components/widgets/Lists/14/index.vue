@@ -35,6 +35,6 @@
 </template>
 <script>
 export default {
-  name: 'AirList14',
+  name: 'AirList14'
 }
 </script>

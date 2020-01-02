@@ -18,7 +18,7 @@
 
 <script>
 import vueCustomScrollbar from 'vue-custom-scrollbar'
-import List1 from '@/components/widgets/Lists/1'
+import List1 from 'src/support/common/components/widgets/Lists/1'
 
 export default {
   components: {

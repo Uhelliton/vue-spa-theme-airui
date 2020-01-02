@@ -266,7 +266,7 @@
 <script>
 import vueCustomScrollbar from 'vue-custom-scrollbar'
 import { mapState } from 'vuex'
-import AirColorPicker from '@/components/layout/Sidebar/partials/colorPicker'
+import AirColorPicker from 'src/support/common/components/layout/Sidebar/partials/colorPicker'
 
 export default {
   components: { vueCustomScrollbar, AirColorPicker },
@@ -277,29 +277,29 @@ export default {
       const value = !this.settings[setting]
       this.$store.commit('CHANGE_SETTING', { setting, value })
     },
-    settingChange(e, setting) {
+    settingChange (e, setting) {
       const value = !this.settings[setting]
       this.$store.commit('CHANGE_SETTING', { setting, value })
     },
-    selectMenuType(e) {
+    selectMenuType (e) {
       const setting = 'menuType'
       const { value } = e.target
       this.$store.commit('CHANGE_SETTING', { setting, value })
     },
-    selectMenuLayoutType(e) {
+    selectMenuLayoutType (e) {
       const setting = 'menuLayoutType'
       const { value } = e.target
       this.$store.commit('CHANGE_SETTING', { setting, value })
     },
-    selectRouterAnimation(value) {
+    selectRouterAnimation (value) {
       const setting = 'routerAnimation'
       this.$store.commit('CHANGE_SETTING', { setting, value })
     },
-    selectLocale(value) {
+    selectLocale (value) {
       const setting = 'locale'
       this.$store.commit('CHANGE_SETTING', { setting, value })
-    },
-  },
+    }
+  }
 }
 </script>
 

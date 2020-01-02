@@ -27,12 +27,12 @@
 </template>
 
 <script>
-import AirMenuDashboards from '@/components/layout/TopBarDark/MenuDashboards'
-import AirMenuPages from '@/components/layout/TopBarDark/MenuPages'
-import AirStatus from '@/components/layout/TopBarDark/Status'
-import AirLanguageSwitcher from '@/components/layout/TopBarDark/LanguageSwitcher'
-import AirActions from '@/components/layout/TopBarDark/Actions'
-import AirUserMenu from '@/components/layout/TopBarDark/UserMenu'
+import AirMenuDashboards from 'src/support/common/components/layout/TopBarDark/MenuDashboards'
+import AirMenuPages from 'src/support/common/components/layout/TopBarDark/MenuPages'
+import AirStatus from 'src/support/common/components/layout/TopBarDark/Status'
+import AirLanguageSwitcher from 'src/support/common/components/layout/TopBarDark/LanguageSwitcher'
+import AirActions from 'src/support/common/components/layout/TopBarDark/Actions'
+import AirUserMenu from 'src/support/common/components/layout/TopBarDark/UserMenu'
 
 export default {
   components: {
@@ -41,8 +41,8 @@ export default {
     AirStatus,
     AirLanguageSwitcher,
     AirActions,
-    AirUserMenu,
-  },
+    AirUserMenu
+  }
 }
 </script>
 

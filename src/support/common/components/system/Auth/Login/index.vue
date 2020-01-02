@@ -68,30 +68,19 @@ export default {
           htmlType="submit"
           size="large"
           class="text-center btn btn-success w-100 font-weight-bold font-size-18"
-        >Log in</a-button>
+        >Entrar</a-button>
       </a-form>
-      <a
-        href="#"
-        class="font-weight-bold font-size-18 text-dark btn btn-outline-light w-100 mb-3"
-        :class="$style.googleSign"
-        :style="{ backgroundImage: 'url(resources/images/icons/google-logo.svg)' }"
-      >Log in with Google</a>
       <router-link
         to="/system/forgot-password"
-        class="text-blue font-weight-bold font-size-18"
-      >Forgot password?</router-link>
-    </div>
-    <div class="text-center font-size-18 pt-4 mb-auto">
-      Don't have an account?
-      <router-link to="/system/register" class="font-weight-bold text-blue text-underlined">
-        <u>Sign Up</u>
+        class="text-blue font-weight-bold font-size-18" >
+        Esqueceu a senha?
       </router-link>
     </div>
+
     <div class="mt-auto pb-5 pt-5">
       <ul
         class="list-unstyled d-flex mb-2 flex-wrap justify-content-center"
-        :class="$style.footerNav"
-      >
+        :class="$style.footerNav">
         <li>
           <a href="#">Terms of Use</a>
         </li>

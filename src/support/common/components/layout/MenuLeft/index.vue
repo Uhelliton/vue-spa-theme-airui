@@ -147,7 +147,7 @@
 import vueCustomScrollbar from 'vue-custom-scrollbar'
 import _ from 'lodash'
 import { mapState } from 'vuex'
-import { getMenuData } from '@/services/menu'
+import { getMenuData } from 'src/support/services/menu'
 import SubMenu from './partials/submenu'
 import Item from './partials/item'
 import Category from './partials/category'
@@ -157,14 +157,14 @@ export default {
   components: { vueCustomScrollbar, SubMenu, Item, Category },
   computed: {
     ...mapState(['settings']),
-    flyoutActive() {
+    flyoutActive () {
       return (this.settings.menuType === 'flyout' || this.settings.menuType === 'compact' || this.settings.isMenuCollapsed) && !this.settings.isMobileView
-    },
+    }
   },
-  mounted() {
+  mounted () {
     this.setActiveItems()
   },
-  data() {
+  data () {
     return {
       menuData: getMenuData,
       activeSubmenu: '',
@@ -174,22 +174,22 @@ export default {
     }
   },
   watch: {
-    '$route'() {
+    '$route' () {
       this.setActiveItems()
-    },
+    }
   },
   methods: {
-    toggleMobileMenu() {
+    toggleMobileMenu () {
       const setting = 'isMobileMenuOpen'
       const value = !this.settings[setting]
       this.$store.commit('CHANGE_SETTING', { setting, value })
     },
-    toggleMenu() {
+    toggleMenu () {
       const setting = 'isMenuCollapsed'
       const value = !this.settings[setting]
       this.$store.commit('CHANGE_SETTING', { setting, value })
     },
-    toggleSettings() {
+    toggleSettings () {
       const setting = 'isSidebarOpen'
       const value = !this.settings[setting]
       this.$store.commit('CHANGE_SETTING', { setting, value })
@@ -201,7 +201,7 @@ export default {
       }
       this.activeSubmenu = currentKey === key ? '' : key
     },
-    setActiveItems() {
+    setActiveItems () {
       const menuData = this.menuData
       const pathname = this.$route.path
 
@@ -239,26 +239,26 @@ export default {
           [key]: {
             key,
             itemDimensions,
-            items,
-          },
+            items
+          }
         }
       }
     },
-    handleFlyoutOut(key) {
+    handleFlyoutOut (key) {
       if (this.flyoutActive) {
         this.flyoutTimers[key] = setTimeout(() => {
           const updatedFlyoutItems = Object.assign({}, this.renderedFlyoutItems)
           delete updatedFlyoutItems[key]
           this.renderedFlyoutItems = {
-            ...updatedFlyoutItems,
+            ...updatedFlyoutItems
           }
         }, 100)
       }
     },
     handleFlyoutContainerOver(key) {
       clearInterval(this.flyoutTimers[key])
-    },
-  },
+    }
+  }
 }
 </script>
 

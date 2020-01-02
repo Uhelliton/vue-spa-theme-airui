@@ -23,11 +23,11 @@
 
 <script>
 import { mapState } from 'vuex'
-import General14 from '@/components/widgets/General/14'
+import General14 from 'src/support/common/components/widgets/General/14'
 
 export default {
   components: {
-    General14,
+    General14
   },
   computed: mapState(['settings']),
   methods: {
@@ -35,8 +35,8 @@ export default {
       const setting = 'isSupportChatOpen'
       const value = !this.settings[setting]
       this.$store.commit('CHANGE_SETTING', { setting, value })
-    },
-  },
+    }
+  }
 }
 </script>
 

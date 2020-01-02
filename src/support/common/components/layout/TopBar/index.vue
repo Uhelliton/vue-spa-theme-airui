@@ -22,12 +22,12 @@
 </template>
 
 <script>
-import AirSearch from '@/components/layout/TopBar/Search'
-import AirIssuesHistory from '@/components/layout/TopBar/IssuesHistory'
-import AirStatus from '@/components/layout/TopBar/Status'
-import AirLanguageSwitcher from '@/components/layout/TopBar/LanguageSwitcher'
-import AirActions from '@/components/layout/TopBar/Actions'
-import AirUserMenu from '@/components/layout/TopBar/UserMenu'
+import AirSearch from 'src/support/common/components/layout/TopBar/Search'
+import AirIssuesHistory from 'src/support/common/components/layout/TopBar/IssuesHistory'
+import AirStatus from 'src/support/common/components/layout/TopBar/Status'
+import AirLanguageSwitcher from 'src/support/common/components/layout/TopBar/LanguageSwitcher'
+import AirActions from 'src/support/common/components/layout/TopBar/Actions'
+import AirUserMenu from 'src/support/common/components/layout/TopBar/UserMenu'
 
 export default {
   components: {
@@ -36,8 +36,8 @@ export default {
     AirStatus,
     AirLanguageSwitcher,
     AirActions,
-    AirUserMenu,
-  },
+    AirUserMenu
+  }
 }
 </script>
 

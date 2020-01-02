@@ -15,7 +15,7 @@
 </template>
 
 <script>
-import List3 from '@/components/widgets/Lists/3'
+import List3 from 'src/support/common/components/widgets/Lists/3'
 
 export default {
   components: {

@@ -49,7 +49,7 @@
 </template>
 <script>
 export default {
-  name: 'AirList15',
+  name: 'AirList15'
 }
 </script>
 <style lang="scss" module>

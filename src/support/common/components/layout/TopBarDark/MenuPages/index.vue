@@ -33,7 +33,7 @@
 </template>
 
 <script>
-import { getMenuData } from '@/services/menu'
+import { getMenuData } from 'src/support/services/menu'
 export default {
   data() {
     return {

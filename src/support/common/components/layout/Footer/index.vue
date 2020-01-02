@@ -35,7 +35,7 @@
 import { mapState } from 'vuex'
 
 export default {
-  computed: mapState(['settings']),
+  computed: mapState(['settings'])
 }
 </script>
 

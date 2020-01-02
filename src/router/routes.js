@@ -6,6 +6,13 @@ const routes = [
     children: [
       { path: '', component: () => import('../views/system/login/index') }
     ]
+  },
+  {
+    path: '/dashboard',
+    component: () => import('../support/common/layouts/App/index'),
+    children: [
+      { path: '', component: () => import('../views/system/login/index') }
+    ]
   }
 ]
 

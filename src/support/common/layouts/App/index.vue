@@ -1,3 +1,68 @@
+<script>
+import { mapState } from 'vuex'
+import AirTopbar from 'src/support/common/components/layout/TopBar'
+import AirTopbarDark from 'src/support/common/components/layout/TopBarDark'
+import AirSubbar from 'src/support/common/components/layout/SubBar'
+import AirMenuLeft from 'src/support/common/components/layout/MenuLeft'
+import AirMenuTop from 'src/support/common/components/layout/MenuTop'
+import AirFooter from 'src/support/common/components/layout/Footer'
+import AirFooterDark from 'src/support/common/components/layout/FooterDark'
+import AirSupportChat from 'src/support/common/components/layout/SupportChat'
+import AirSidebar from 'src/support/common/components/layout/Sidebar'
+
+export default {
+  name: 'AppLayout',
+  computed: mapState(['settings']),
+  components: { AirTopbar, AirSubbar, AirMenuLeft, AirMenuTop, AirFooter, AirSupportChat, AirSidebar, AirTopbarDark, AirFooterDark },
+  mounted () {
+    this.detectViewPort(true)
+    window.addEventListener('resize', this.detectViewPortListener)
+  },
+  beforeDestroy () {
+    window.removeEventListener('resize', this.detectViewPortListener)
+  },
+  methods: {
+    detectViewPortListener: function () {
+      this.detectViewPort(false)
+    },
+    setViewPort: function (isMobileView = false, isTabletView = false) {
+      this.$store.commit('CHANGE_SETTING', { setting: 'isMobileView', value: isMobileView })
+      this.$store.commit('CHANGE_SETTING', { setting: 'isTabletView', value: isTabletView })
+    },
+    detectViewPort: function (firstLoad = false) {
+      const isMobile = this.settings['isMobileView']
+      const isTablet = this.settings['isTabletView']
+      const width = window.innerWidth
+      const state = {
+        next: {
+          mobile: width < 768,
+          tablet: width < 992,
+          desktop: !(width < 768) && !(width < 992)
+        },
+        prev: {
+          mobile: isMobile,
+          tablet: isTablet,
+          desktop: !(isMobile) && !(isTablet)
+        }
+      }
+      // desktop
+      if (state.next.desktop && ((state.next.desktop !== state.prev.desktop) || firstLoad)) {
+        this.setViewPort(false, false)
+      }
+      // tablet & collapse menu
+      if (state.next.tablet && !state.next.mobile && ((state.next.tablet !== state.prev.tablet) || firstLoad)) {
+        this.setViewPort(false, true)
+        this.$store.commit('CHANGE_SETTING', { setting: 'isMenuCollapsed', value: true })
+      }
+      // mobile
+      if (state.next.mobile && ((state.next.mobile !== state.prev.mobile) || firstLoad)) {
+        this.setViewPort(true, false)
+      }
+    }
+  }
+}
+</script>
+
 <template>
   <div :class="{air__layout__grayBackground: settings.isGrayBackground}">
     <a-layout
@@ -41,68 +106,3 @@
     </a-layout>
   </div>
 </template>
-
-<script>
-import { mapState } from 'vuex'
-import AirTopbar from '@/components/layout/TopBar'
-import AirTopbarDark from '@/components/layout/TopBarDark'
-import AirSubbar from '@/components/layout/SubBar'
-import AirMenuLeft from '@/components/layout/MenuLeft'
-import AirMenuTop from '@/components/layout/MenuTop'
-import AirFooter from '@/components/layout/Footer'
-import AirFooterDark from '@/components/layout/FooterDark'
-import AirSupportChat from '@/components/layout/SupportChat'
-import AirSidebar from '@/components/layout/Sidebar'
-
-export default {
-  name: 'AppLayout',
-  computed: mapState(['settings']),
-  components: { AirTopbar, AirSubbar, AirMenuLeft, AirMenuTop, AirFooter, AirSupportChat, AirSidebar, AirTopbarDark, AirFooterDark },
-  mounted() {
-    this.detectViewPort(true)
-    window.addEventListener('resize', this.detectViewPortListener)
-  },
-  beforeDestroy() {
-    window.removeEventListener('resize', this.detectViewPortListener)
-  },
-  methods: {
-    detectViewPortListener: function () {
-      this.detectViewPort(false)
-    },
-    setViewPort: function (isMobileView = false, isTabletView = false) {
-      this.$store.commit('CHANGE_SETTING', { setting: 'isMobileView', value: isMobileView })
-      this.$store.commit('CHANGE_SETTING', { setting: 'isTabletView', value: isTabletView })
-    },
-    detectViewPort: function (firstLoad = false) {
-      const isMobile = this.settings['isMobileView']
-      const isTablet = this.settings['isTabletView']
-      const width = window.innerWidth
-      const state = {
-        next: {
-          mobile: width < 768,
-          tablet: width < 992,
-          desktop: !(width < 768) && !(width < 992),
-        },
-        prev: {
-          mobile: isMobile,
-          tablet: isTablet,
-          desktop: !(isMobile) && !(isTablet),
-        },
-      }
-      // desktop
-      if (state.next.desktop && ((state.next.desktop !== state.prev.desktop) || firstLoad)) {
-        this.setViewPort(false, false)
-      }
-      // tablet & collapse menu
-      if (state.next.tablet && !state.next.mobile && ((state.next.tablet !== state.prev.tablet) || firstLoad)) {
-        this.setViewPort(false, true)
-        this.$store.commit('CHANGE_SETTING', { setting: 'isMenuCollapsed', value: true })
-      }
-      // mobile
-      if (state.next.mobile && ((state.next.mobile !== state.prev.mobile) || firstLoad)) {
-        this.setViewPort(true, false)
-      }
-    },
-  },
-}
-</script>

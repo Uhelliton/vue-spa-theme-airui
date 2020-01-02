@@ -74,11 +74,13 @@
     </ul>
   </div>
 </template>
+
 <script>
 export default {
-  name: 'AirList1',
+  name: 'AirList1'
 }
 </script>
+
 <style lang="scss" module>
 @import "./style.module.scss";
 </style>
