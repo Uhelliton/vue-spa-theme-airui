@@ -48,7 +48,7 @@ export default {
     activeItem: String,
     handleSubmenuClick: Function,
     handleFlyoutOver: Function,
-    handleFlyoutOut: Function,
-  },
+    handleFlyoutOut: Function
+  }
 }
 </script>

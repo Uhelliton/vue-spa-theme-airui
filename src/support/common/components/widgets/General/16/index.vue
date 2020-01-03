@@ -32,17 +32,17 @@
 export default {
   name: 'AirGeneral16',
   props: ['isNew', 'isFavorite', 'image', 'name', 'price', 'oldPrice'],
-  data: function() {
+  data: function () {
     return {
-      favorite: this.isFavorite,
+      favorite: this.isFavorite
     }
   },
   methods: {
     toggleFavorite: function (event) {
       event.preventDefault()
       this.favorite = !this.favorite
-    },
-  },
+    }
+  }
 }
 </script>
 <style lang="scss" module>

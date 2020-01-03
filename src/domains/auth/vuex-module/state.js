@@ -1,5 +1,8 @@
 import UserStorage from '../storage/index'
 export default {
-  user: UserStorage.getUser(),
+  user: {
+    name: 'Uhelliton',
+    email: 'uhelliton@uol.com.br'
+  },
   token: UserStorage.getToken()
 }

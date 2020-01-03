@@ -31,7 +31,7 @@ import VueChartist from 'v-chartist'
 export default {
   name: 'AirChart3',
   components: {
-    'vue-chartist': VueChartist,
+    'vue-chartist': VueChartist
   },
   data: function () {
     const options = {
@@ -40,7 +40,7 @@ export default {
         right: 0,
         left: 0,
         top: 5,
-        bottom: 0,
+        bottom: 0
       },
       fullWidth: true,
       showPoint: false,
@@ -48,14 +48,14 @@ export default {
       axisY: {
         showGrid: false,
         showLabel: false,
-        offset: 0,
+        offset: 0
       },
       axisX: {
         showGrid: false,
         showLabel: false,
-        offset: 0,
+        offset: 0
       },
-      showArea: true,
+      showArea: true
     }
     const listener = {
       draw: item => {
@@ -66,16 +66,16 @@ export default {
             y1: item.y2,
             y2: 0,
             stroke: '#e4e9f0',
-            'stroke-width': '10',
+            'stroke-width': '10'
           })
         }
-      },
+      }
     }
     return {
       data,
       options,
-      listener,
+      listener
     }
-  },
+  }
 }
 </script>

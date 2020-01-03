@@ -19,8 +19,8 @@ import List3 from 'src/support/common/components/widgets/Lists/3'
 
 export default {
   components: {
-    List3,
-  },
+    List3
+  }
 }
 </script>
 

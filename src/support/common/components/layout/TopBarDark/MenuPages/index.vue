@@ -35,11 +35,11 @@
 <script>
 import { getMenuData } from 'src/support/services/menu'
 export default {
-  data() {
+  data () {
     return {
-      menuData: getMenuData,
+      menuData: getMenuData
     }
-  },
+  }
 }
 </script>
 

@@ -170,7 +170,7 @@ export default {
       activeSubmenu: '',
       activeItem: '',
       renderedFlyoutItems: {},
-      flyoutTimers: {},
+      flyoutTimers: {}
     }
   },
   watch: {
@@ -194,7 +194,7 @@ export default {
       const value = !this.settings[setting]
       this.$store.commit('CHANGE_SETTING', { setting, value })
     },
-    handleSubmenuClick(key) {
+    handleSubmenuClick (key) {
       const currentKey = this.activeSubmenu
       if (this.flyoutActive) {
         return
@@ -229,7 +229,7 @@ export default {
       this.activeItem = activeItem.key
       this.activeSubmenu = activeSubmenu.key
     },
-    handleFlyoutOver(event, key, items) {
+    handleFlyoutOver (event, key, items) {
       if (this.flyoutActive) {
         clearInterval(this.flyoutTimers[key])
         const item = event.currentTarget
@@ -255,7 +255,7 @@ export default {
         }, 100)
       }
     },
-    handleFlyoutContainerOver(key) {
+    handleFlyoutContainerOver (key) {
       clearInterval(this.flyoutTimers[key])
     }
   }

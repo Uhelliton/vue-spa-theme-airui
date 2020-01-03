@@ -141,7 +141,7 @@ export default {
       activeSubmenu: '',
       activeItem: '',
       renderedFlyoutItems: {},
-      flyoutTimers: {},
+      flyoutTimers: {}
     }
   },
   watch: {
@@ -221,7 +221,7 @@ export default {
           const updatedFlyoutItems = Object.assign({}, this.renderedFlyoutItems)
           delete updatedFlyoutItems[key]
           this.renderedFlyoutItems = {
-            ...updatedFlyoutItems,
+            ...updatedFlyoutItems
           }
         }, 100)
       }

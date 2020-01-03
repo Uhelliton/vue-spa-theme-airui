@@ -72,14 +72,14 @@
   </div>
 </template>
 <script>
-import AirChart3 from '@/components/widgets/Charts/3/index'
-import AirGeneral2 from '@/components/widgets/General/2/index'
-import AirGeneral2v1 from '@/components/widgets/General/2v1/index'
-import AirGeneral2v2 from '@/components/widgets/General/2v2/index'
-import AirGeneral2v3 from '@/components/widgets/General/2v3/index'
-import AirGeneral16 from '@/components/widgets/General/16/index'
-import AirList11 from '@/components/widgets/Lists/11/index'
-import AirList12 from '@/components/widgets/Lists/12/index'
+import AirChart3 from '@support/common/components/widgets/Charts/3/index'
+import AirGeneral2 from '@support/common/components/widgets/General/2/index'
+import AirGeneral2v1 from '@support/common/components/widgets/General/2v1/index'
+import AirGeneral2v2 from '@support/common/components/widgets/General/2v2/index'
+import AirGeneral2v3 from '@support/common/components/widgets/General/2v3/index'
+import AirGeneral16 from '@support/common/components/widgets/General/16/index'
+import AirList11 from '@support/common/components/widgets/Lists/11/index'
+import AirList12 from '@support/common/components/widgets/Lists/12/index'
 import products from './data.json'
 
 export default {
@@ -91,12 +91,12 @@ export default {
     AirGeneral2v3,
     AirGeneral16,
     AirList11,
-    AirList12,
+    AirList12
   },
   data: function () {
     return {
-      products,
+      products
     }
-  },
+  }
 }
 </script>

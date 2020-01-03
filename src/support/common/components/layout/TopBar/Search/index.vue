@@ -23,8 +23,8 @@ import List1 from 'src/support/common/components/widgets/Lists/1'
 export default {
   components: {
     List1,
-    vueCustomScrollbar,
-  },
+    vueCustomScrollbar
+  }
 }
 </script>
 

@@ -24,13 +24,13 @@ export default {
   props: {
     setting: String,
     value: String,
-    colors: Array,
+    colors: Array
   },
   methods: {
-    colorPickerHandler(setting, value) {
+    colorPickerHandler (setting, value) {
       this.$store.commit('CHANGE_SETTING', { setting, value })
-    },
-  },
+    }
+  }
 }
 </script>
 

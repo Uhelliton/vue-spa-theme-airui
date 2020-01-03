@@ -25,10 +25,10 @@ export default {
     menuColor: 'dark', // dark, blue, gray, white
     flyoutMenuColor: 'blue', // dark, blue, gray, white
     systemLayoutColor: 'gray', // white, dark, blue, gray, image
-    isTopbarFixed: false,
+    isTopbarFixed: true,
     isFooterDark: false,
     isContentNoMaxWidth: false,
-    isAppMaxWidth: false,
+    isAppMaxWidth: true,
     isGrayBackground: false,
     isGrayTopbar: false,
     isCardShadow: false,

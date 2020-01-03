@@ -75,7 +75,7 @@ module.exports = function (ctx) {
           ...cfg.resolve.alias, // This adds the existing alias
 
           // Add your own alias like this
-          support: path.resolve(__dirname, './src/support'),
+          '@support': path.resolve(__dirname, './src/support'),
           '@assets': path.resolve(__dirname, './src/assets')
         }
         cfg.module.rules.push({

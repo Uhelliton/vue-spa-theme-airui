@@ -30,16 +30,16 @@ import { mapState } from 'vuex'
 export default {
   computed: {
     ...mapState(['settings']),
-    language() {
+    language () {
       return this.settings.locale.substr(0, 2)
-    },
+    }
   },
   methods: {
-    selectLocale(item) {
+    selectLocale (item) {
       const setting = 'locale'
       this.$store.commit('CHANGE_SETTING', { setting, value: item.key })
-    },
-  },
+    }
+  }
 }
 </script>
 

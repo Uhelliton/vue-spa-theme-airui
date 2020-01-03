@@ -72,6 +72,6 @@
 </template>
 <script>
 export default {
-  name: 'AirList12',
+  name: 'AirList12'
 }
 </script>

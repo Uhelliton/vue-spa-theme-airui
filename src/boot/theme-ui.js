@@ -1,6 +1,8 @@
 import NProgress from 'vue-nprogress'
 import VueLayers from 'vuelayers'
 import BootstrapVue from 'bootstrap-vue'
+import FirebaseAuthService from '@support/services/firebase'
+
 import {
   Avatar, TreeSelect, Rate, Breadcrumb, InputNumber, Steps,
   Upload, Button, Layout, Table, Icon, Progress, Radio, Dropdown, Menu,
@@ -74,6 +76,7 @@ export default ({ app, router, Vue }) => {
   Vue.prototype.$message = message
 
   Vue.use(NProgress)
+  Vue.use(FirebaseAuthService)
 
   Vue.config.productionTip = false
   // const nprogress = new NProgress({ parent: 'body' })

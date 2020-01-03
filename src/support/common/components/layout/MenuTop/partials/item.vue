@@ -34,7 +34,7 @@ export default {
   props: {
     item: Object,
     styles: Object,
-    activeItem: String,
-  },
+    activeItem: String
+  }
 }
 </script>

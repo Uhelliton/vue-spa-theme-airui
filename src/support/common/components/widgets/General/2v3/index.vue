@@ -15,6 +15,6 @@
 </template>
 <script>
 export default {
-  name: 'AirGeneral',
+  name: 'AirGeneral'
 }
 </script>

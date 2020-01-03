@@ -9,9 +9,10 @@ const routes = [
   },
   {
     path: '/dashboard',
+    redirect: 'dashboard/ecommerce',
     component: () => import('../support/common/layouts/App/index'),
     children: [
-      { path: '', component: () => import('../views/system/login/index') }
+      { path: '', component: () => import('../views/dashboard/ecommerce/index') }
     ]
   }
 ]

@@ -6,8 +6,8 @@ import mutations from './mutations'
 import actions from './actions'
 import getters from './getters'
 
-import auth from '../domains/auth/vuex-module/index'
-import settings from '../support/store/settings/vuex-module/index'
+import auth from 'src/domains/auth/vuex-module/index'
+import settings from 'src/support/store/settings/vuex-module/index'
 
 Vue.use(Vuex)
 
