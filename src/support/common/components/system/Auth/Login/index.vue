@@ -11,10 +11,10 @@ export default {
       e.preventDefault()
       this.form.validateFields((err, values) => {
         if (!err) {
-          this.$nprogress.start()
+          // this.$nprogress.start()
           this.$auth.login(values.email, values.password)
             .then(() => {
-              this.$nprogress.done()
+              // this.$nprogress.done()
               this.$router.push('/')
               this.$notification['success']({
                 message: 'Logged In',
@@ -22,7 +22,7 @@ export default {
               })
             })
             .catch((error) => {
-              this.$nprogress.done()
+              // this.$nprogress.done()
               this.$notification['warning']({
                 message: error.code,
                 description: error.message
@@ -38,7 +38,7 @@ export default {
 <template>
   <div :class="$style.auth">
     <div class="pt-5 pb-5 d-flex align-items-end mt-auto">
-      <img src="resources/images/air-logo.png" alt="AIR UI Logo" />
+      <img src="https://www.airuitemplate.com/preview/vue/resources/images/air-logo.png" alt="AIR UI Logo" />
       <div class="air__utils__logo__text">
         <div class="air__utils__logo__name text-uppercase text-dark font-size-21">AIR UI</div>
         <div class="air__utils__logo__descr text-uppercase font-size-12 text-gray-6">Admin template</div>

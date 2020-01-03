@@ -1,6 +1,7 @@
 import NProgress from 'vue-nprogress'
 import VueLayers from 'vuelayers'
 import BootstrapVue from 'bootstrap-vue'
+import VuePageTitle from 'vue-page-title'
 import FirebaseAuthService from '@support/services/firebase'
 
 import {
@@ -77,7 +78,13 @@ export default ({ app, router, Vue }) => {
 
   Vue.use(NProgress)
   Vue.use(FirebaseAuthService)
+  Vue.use(VuePageTitle, {
+    prefix: 'Vue Skeleton | ',
+    router
+  })
 
   Vue.config.productionTip = false
-  // const nprogress = new NProgress({ parent: 'body' })
+  const nprogress = new NProgress({ parent: 'body' })
+
+  Vue.use(nprogress)
 }

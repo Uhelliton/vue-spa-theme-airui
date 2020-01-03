@@ -1,5 +1,5 @@
 <template>
-  <div :class="$style.subbar">
+  <div :class="$style.subbar" hidden>
     <ul :class="$style.breadcrumbs" class="mr-4">
       <li :class="$style.breadcrumb">
         <a href="#" class="style.breadcrumbLink">Main</a>

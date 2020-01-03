@@ -1,7 +1,7 @@
 <template>
   <div :class="$style.topbarDark">
     <a href="javascript: void(0);" :class="$style.logo" class="d-none d-md-block">
-      <img src="resources/images/air-logo.png" alt="Air UI" />
+      <img src="https://www.airuitemplate.com/preview/vue/resources/images/air-logo.png" alt="Air UI" />
       <div :class="$style.logoName">AIR UI</div>
       <div :class="$style.logoDescr">Admin Template</div>
     </a>

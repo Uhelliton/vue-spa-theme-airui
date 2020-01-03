@@ -1,5 +1,5 @@
 <script>
-import { mapState } from 'vuex'
+import { mapState, mapMutations } from 'vuex'
 import AirTopbar from 'src/support/common/components/layout/TopBar'
 import AirTopbarDark from 'src/support/common/components/layout/TopBarDark'
 import AirSubbar from 'src/support/common/components/layout/SubBar'
@@ -22,12 +22,13 @@ export default {
     window.removeEventListener('resize', this.detectViewPortListener)
   },
   methods: {
+    ...mapMutations('settings', ['CHANGE_SETTING']),
     detectViewPortListener: function () {
       this.detectViewPort(false)
     },
     setViewPort: function (isMobileView = false, isTabletView = false) {
-      this.$store.commit('CHANGE_SETTING', { setting: 'isMobileView', value: isMobileView })
-      this.$store.commit('CHANGE_SETTING', { setting: 'isTabletView', value: isTabletView })
+      this.CHANGE_SETTING({ setting: 'isMobileView', value: isMobileView })
+      this.CHANGE_SETTING({ setting: 'isTabletView', value: isTabletView })
     },
     detectViewPort: function (firstLoad = false) {
       const isMobile = this.settings['isMobileView']
@@ -52,7 +53,7 @@ export default {
       // tablet & collapse menu
       if (state.next.tablet && !state.next.mobile && ((state.next.tablet !== state.prev.tablet) || firstLoad)) {
         this.setViewPort(false, true)
-        this.$store.commit('CHANGE_SETTING', { setting: 'isMenuCollapsed', value: true })
+        this.CHANGE_SETTING({ setting: 'isMenuCollapsed', value: true })
       }
       // mobile
       if (state.next.mobile && ((state.next.mobile !== state.prev.mobile) || firstLoad)) {
@@ -76,7 +77,7 @@ export default {
     }"
     >
       <air-sidebar />
-      <air-support-chat />
+      <air-support-chat hidden />
       <air-menu-left v-if="settings.menuLayoutType === 'left'" />
       <air-menu-top v-if="settings.menuLayoutType === 'top'" />
       <a-layout>

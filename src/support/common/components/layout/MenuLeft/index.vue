@@ -62,13 +62,13 @@
           <span />
         </a>
         <a href="javascript: void(0);" :class="$style.air__menuLeft__logo">
-          <img src="resources/images/air-logo.png" alt="Air UI" />
+          <img src="https://www.airuitemplate.com/preview/vue/resources/images/air-logo.png" alt="Air UI" />
           <div :class="$style.air__menuLeft__logo__name">AIR UI</div>
           <div :class="$style.air__menuLeft__logo__descr">Admin Template</div>
         </a>
         <a href="javascript: void(0);" :class="$style.air__menuLeft__user">
           <div :class="$style.air__menuLeft__user__avatar">
-            <img src="resources/images/avatars/avatar.png" alt="David Beckham" />
+            <img src="https://www.airuitemplate.com/preview/vue/resources/images/avatars/avatar.png" alt="David Beckham" />
           </div>
           <div :class="$style.air__menuLeft__user__name">David Beckham</div>
           <div :class="$style.air__menuLeft__user__role">Administrator</div>

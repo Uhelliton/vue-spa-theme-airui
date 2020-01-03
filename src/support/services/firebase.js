@@ -1,4 +1,4 @@
-import store from 'src/store'
+import store from 'src/domains/auth/vuex-module/index'
 import router from 'src/router'
 import firebase from 'firebase/app'
 import 'firebase/auth'
@@ -28,7 +28,7 @@ export default {
       }
     }
     auth.onAuthStateChanged(user => {
-      store.commit('auth/CHANGE_USER', user, { root: true })
+      store.commit('CHANGE_USER', user, { root: true })
     })
   }
 }

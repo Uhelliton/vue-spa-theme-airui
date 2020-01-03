@@ -54,7 +54,7 @@
           <span />
         </a>
         <a href="javascript: void(0);" :class="$style.air__menuTop__logo">
-          <img src="resources/images/air-logo.png" alt="Air UI" />
+          <img src="https://www.airuitemplate.com/preview/vue/resources/images/air-logo.png" alt="Air UI" />
           <div :class="$style.air__menuTop__logo__name">AIR UI</div>
           <div :class="$style.air__menuTop__logo__descr">Admin Template</div>
         </a>

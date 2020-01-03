@@ -7,36 +7,36 @@
     </div>
     <a-menu slot="overlay">
       <a-menu-item>
-        <strong>{{ $t('topBar.profileMenu.hello') }}, Username</strong>
+        <strong> Username</strong>
         <div>
-          <strong class="mr-1">{{ $t('topBar.profileMenu.billingPlan') }}:</strong>
+          <strong class="mr-1">Plano:</strong>
           Professional
         </div>
         <div>
-          <strong>{{ $t('topBar.profileMenu.role') }}:</strong>
+          <strong>Função:</strong>
           Administrator
         </div>
       </a-menu-item>
       <a-menu-divider />
       <a-menu-item>
         <div>
-          <strong class="mr-1">{{ $t('topBar.profileMenu.email') }}:</strong> admin@mediatec.org
+          <strong class="mr-1">Email:</strong> admin@mediatec.org
         </div>
         <div>
-          <strong class="mr-1">{{ $t('topBar.profileMenu.phone') }}:</strong> -
+          <strong class="mr-1">Telefone:</strong> -
         </div>
       </a-menu-item>
       <a-menu-divider />
       <a-menu-item>
         <a href="javascript: void(0);">
           <i :class="$style.menuIcon" class="fe fe-user"></i>
-          {{ $t('topBar.profileMenu.editProfile') }}
+         Editar Profile
         </a>
       </a-menu-item>
       <a-menu-item>
         <a href="javascript: void(0);" @click="logout">
           <i :class="$style.menuIcon" class="fe fe-log-out"></i>
-          {{ $t('topBar.profileMenu.logout') }}
+          Logout
         </a>
       </a-menu-item>
     </a-menu>

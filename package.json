@@ -25,6 +25,7 @@
     "v-chartist": "^0.1.6",
     "vue-custom-scrollbar": "^1.1.0",
     "vue-nprogress": "^0.1.5",
+    "vue-page-title": "^1.1.6",
     "vue-the-mask": "^0.11.1",
     "vuelayers": "^0.11.20"
   },

@@ -53,7 +53,7 @@
       <div :class="$style.container">
         <div class="d-sm-flex align-items-sm-center">
           <div :class="$style.logo" class="clearfix mb-3 mr-sm-auto">
-            <img src="resources/images/air-logo.png" alt="Air UI" />
+            <img src="https://www.airuitemplate.com/preview/resources/images/air-logo.png" alt="Air UI" />
             <div :class="$style.logoName">AIR UI</div>
             <div :class="$style.logoDescr">Admin Template</div>
           </div>

@@ -1,18 +1,18 @@
 
 const routes = [
   {
-    path: '/',
+    path: '/login',
     component: () => import('../support/common/layouts/Auth/index'),
     children: [
       { path: '', component: () => import('../views/system/login/index') }
     ]
   },
   {
-    path: '/dashboard',
+    path: '/',
     redirect: 'dashboard/ecommerce',
     component: () => import('../support/common/layouts/App/index'),
     children: [
-      { path: '', component: () => import('../views/dashboard/ecommerce/index') }
+      { path: 'dashboard/ecommerce', component: () => import('../views/dashboard/ecommerce/index') }
     ]
   }
 ]
@@ -21,7 +21,7 @@ const routes = [
 if (process.env.MODE !== 'ssr') {
   routes.push({
     path: '*',
-    component: () => import('pages/Error404.vue')
+    component: () => import('@support/common/layouts/error/Error404.vue')
   })
 }
 
