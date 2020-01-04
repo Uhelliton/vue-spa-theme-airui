@@ -119,7 +119,7 @@
 import vueCustomScrollbar from 'vue-custom-scrollbar'
 import _ from 'lodash'
 import { mapState } from 'vuex'
-import { getMenuData } from 'src/support/services/menu'
+import { getMenuData } from 'src/support/common/menu'
 import SubMenu from './partials/submenu'
 import Item from './partials/item'
 

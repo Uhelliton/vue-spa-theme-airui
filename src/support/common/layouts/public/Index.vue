@@ -6,6 +6,6 @@
 
 <script>
 export default {
-  name: 'PublicLayout',
+  name: 'PublicLayout'
 }
 </script>

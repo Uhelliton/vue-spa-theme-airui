@@ -37,7 +37,7 @@
 </template>
 <script>
 export default {
-  name: 'AirError404',
+  name: 'AirError404'
 }
 </script>
 <style lang="scss" module>
