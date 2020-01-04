@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 
+// import beforeEach from '../router/before-each'
 import routes from './routes'
 
 Vue.use(VueRouter)
@@ -26,5 +27,6 @@ export default function (/* { store, ssrContext } */) {
     base: process.env.VUE_ROUTER_BASE
   })
 
+  // Router.beforeEach(beforeEach)
   return Router
 }

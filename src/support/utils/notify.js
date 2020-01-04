@@ -1,10 +1,10 @@
-import { Notification } from 'element-ui'
+import { notification } from 'ant-design-vue'
 
 const NotifyMessage = {
   success: (message) => {
-    return Notification.success({
-      title: 'Sucesso',
-      message: `${message}`
+    return notification.success({
+      message: 'Sucesso',
+      description: `${message}`
     })
   },
   /*!
@@ -13,9 +13,9 @@ const NotifyMessage = {
    * @param message
    */
   warning: (message) => {
-    return Notification.warning({
-      title: 'Ops',
-      message: `${message}`
+    return notification.warning({
+      message: 'Ops',
+      description: `${message}`
     })
   },
   /*!
@@ -24,9 +24,9 @@ const NotifyMessage = {
   * @param message
   */
   error: (message) => {
-    return Notification.error({
-      title: 'Erro',
-      message: `${message}`
+    return notification.error({
+      message: 'Erro',
+      description: `${message}`
     })
   }
 }

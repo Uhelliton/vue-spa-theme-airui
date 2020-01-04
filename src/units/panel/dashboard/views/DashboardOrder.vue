@@ -94,17 +94,17 @@
   </div>
 </template>
 <script>
-import data from './data.json'
+import data from './data-orders.json'
 const columns = [
   {
     title: 'ID',
     dataIndex: 'id',
     scopedSlots: { customRender: 'id' },
-    sorter: (a, b) => a.id - b.id,
+    sorter: (a, b) => a.id - b.id
   },
   {
     title: 'Purchase Date',
-    dataIndex: 'date',
+    dataIndex: 'date'
   },
   {
     title: 'Customer',
@@ -113,45 +113,46 @@ const columns = [
     scopedSlots: {
       filterDropdown: 'filterDropdown',
       filterIcon: 'filterIcon',
-      customRender: 'customer',
+      customRender: 'customer'
     },
-    onFilter: (value, record) => record.customer.toLowerCase().includes(value.toLowerCase()),
+    onFilter: (value, record) => record.customer.toLowerCase().includes(value.toLowerCase())
   },
   {
     title: 'Grand Total',
     dataIndex: 'total',
     sorter: (a, b) => a.total - b.total,
-    scopedSlots: { customRender: 'total' },
+    scopedSlots: { customRender: 'total' }
   },
   {
     title: 'Tax',
     dataIndex: 'tax',
     sorter: (a, b) => a.tax - b.tax,
-    scopedSlots: { customRender: 'tax' },
+    scopedSlots: { customRender: 'tax' }
   },
   {
     title: 'Shipping',
     dataIndex: 'shipping',
     sorter: (a, b) => a.shipping - b.shipping,
-    scopedSlots: { customRender: 'shipping' },
+    scopedSlots: { customRender: 'shipping' }
   },
   {
     title: 'Quantity',
     dataIndex: 'quantity',
-    sorter: (a, b) => a.quantity - b.quantity,
+    sorter: (a, b) => a.quantity - b.quantity
   },
   {
     title: 'Status',
     dataIndex: 'status',
     sorter: (a, b) => a.status.length - b.status.length,
-    scopedSlots: { customRender: 'status' },
+    scopedSlots: { customRender: 'status' }
   },
   {
     title: 'Action',
-    scopedSlots: { customRender: 'action' },
-  },
+    scopedSlots: { customRender: 'action' }
+  }
 ]
 export default {
+  name: 'dashboardOrders',
   data: function () {
     return {
       searchText: '',
@@ -169,8 +170,8 @@ export default {
     handleReset (clearFilters) {
       clearFilters()
       this.searchText = ''
-    },
-  },
+    }
+  }
 }
 </script>
 <style scoped>

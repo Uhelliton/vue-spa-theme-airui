@@ -11,8 +11,8 @@ export const getMenuData = [
     children: [
       {
         title: 'Analytics',
-        key: 'dashboardAnalytics',
-        url: '/dashboard/analytics'
+        key: 'dashboard.order',
+        url: '/dashboard/order'
       },
       {
         title: 'Statistics',

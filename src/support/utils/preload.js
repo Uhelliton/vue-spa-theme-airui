@@ -1,4 +1,4 @@
-import { Loading } from 'element-ui'
+import { Loading } from 'quasar'
 
 const Preload = {
   /*!
@@ -6,10 +6,9 @@ const Preload = {
    * @param message
    */
   show: (message = 'Processando...') => {
-    return Loading.service({
-      lock: true,
-      text: `${message}`,
-      background: 'rgba(255, 255, 255, 0.7)'
+    return Loading.show({
+      message: `${message}`,
+      backgroundColor: 'rgba(255, 255, 255, 0.7)'
     })
   },
   /*!
@@ -17,7 +16,7 @@ const Preload = {
    * @param message
    */
   hide: () => {
-    return Loading.service().close()
+    return Loading.hide()
   }
 }
 

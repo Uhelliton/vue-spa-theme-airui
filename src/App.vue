@@ -1,34 +1,34 @@
 <script>
-import { mapGetters, mapMutations } from 'vuex'
+import LayoutApp from 'src/support/common/layouts/App/index'
+import LayoutAuth from 'src/support/common/layouts/Auth/index'
 
 export default {
-  name: 'app',
-  computed: {
-    ...mapGetters('auth', ['user']),
-    nextRoute () {
-      return this.$route.query.redirect || '/'
-    }
+  name: 'App',
+  components: {
+    LayoutApp,
+    LayoutAuth
   },
-  watch: {
-    user (auth) {
-      console.log(auth)
-      if (auth) {
-        this.$router.replace(this.nextRoute)
-      }
-    },
-    '$route' (to, from) {
-      const query = Object.assign({}, to.query)
-      this.SETUP_URL_SETTINGS(query)
+  data () {
+    return {
+      layout: this.$route.meta.layout || 'admin'
     }
   },
   methods: {
-    ...mapMutations('settings', ['SETUP_URL_SETTINGS'])
+    handleRouteUpdate (to, from) {
+      this.layout = to.meta.layout || 'admin'
+    }
+  },
+  watch: {
+    '$route' (to, from) {
+      this.handleRouteUpdate(to, from)
+    }
   }
 }
 </script>
 
 <template>
   <div id="q-app">
-    <router-view />
+    <layout-app v-show="layout === 'admin'"></layout-app>
+    <layout-auth v-show="layout !== 'admin'"></layout-auth>
   </div>
 </template>
