@@ -2,15 +2,14 @@ import NProgress from 'vue-nprogress'
 import VueLayers from 'vuelayers'
 import BootstrapVue from 'bootstrap-vue'
 import VuePageTitle from 'vue-page-title'
-import FirebaseAuthService from '@support/services/firebase'
 
 import {
   Avatar, TreeSelect, Rate, Breadcrumb, InputNumber, Steps,
   Upload, Button, Layout, Table, Icon, Progress, Radio, Dropdown, Menu,
   Carousel, Input, Calendar, Badge, Slider, Form, Tooltip, Select, Switch,
-  Tag, Affix, Spin, Alert, Checkbox, Tabs, Pagination, notification, Drawer,
+  Tag, Affix, Spin, Alert, Checkbox, Tabs, Pagination, Drawer,
   Cascader, DatePicker, TimePicker, Divider, Anchor, AutoComplete, BackTop, Collapse, Card, List, Popover,
-  Tree, Timeline, Row, Col, Transfer, Modal, message, Popconfirm, Skeleton, LocaleProvider
+  Tree, Timeline, Row, Col, Transfer, Modal, Popconfirm, Skeleton, LocaleProvider
 } from 'ant-design-vue'
 
 import '../assets/styles/global.scss'
@@ -73,11 +72,7 @@ export default ({ app, router, Vue }) => {
   Vue.use(BackTop)
   Vue.use(LocaleProvider)
 
-  Vue.prototype.$notification = notification
-  Vue.prototype.$message = message
-
   Vue.use(NProgress)
-  Vue.use(FirebaseAuthService)
   Vue.use(VuePageTitle, {
     prefix: 'Vue Skeleton | ',
     router
@@ -86,5 +81,12 @@ export default ({ app, router, Vue }) => {
   Vue.config.productionTip = false
   const nprogress = new NProgress({ parent: 'body' })
 
-  Vue.use(nprogress)
+  const appx = new Vue({
+    nprogress,
+    ...app
+  })
+
+  return {
+    appx
+  }
 }
